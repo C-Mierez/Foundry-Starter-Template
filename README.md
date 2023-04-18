@@ -13,7 +13,7 @@ A quick starter template with some additional setup I normally need.
 
 File with different `make` shortcuts for commonly used commands in Foundry.
 
-### Dependencies
+### Subdirectories
 - [Openzeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
 - [Solmate](https://github.com/transmissions11/solmate)
 - [Foundry-DevOps](https://github.com/ChainAccelOrg/foundry-devops)
@@ -22,6 +22,9 @@ File with different `make` shortcuts for commonly used commands in Foundry.
 - `@openzeppelin`
 - `@solmate`
 - `@foundry-devops`
+
+### Dependencies
+- Prettier
 
 
 ## Requirements
