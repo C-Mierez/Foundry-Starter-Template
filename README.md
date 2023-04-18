@@ -33,7 +33,7 @@ File with different `make` shortcuts for commonly used commands in Foundry.
 
 ### Other
 
-Slither Configuration file `slither.config.json`
+[Slither](https://github.com/crytic/slither) Configuration file `slither.config.json`
 
 ## Requirements
 
@@ -69,3 +69,7 @@ Slither Configuration file `slither.config.json`
 ## Tests
 
 ## Scripts
+
+# Credit
+
+This template is built from my own personal use and other repos I've encountered, but its structure is heavily influenced by [foundry-starter-kit](https://github.com/smartcontractkit/foundry-starter-kit) from SmartContractKit 🔥
