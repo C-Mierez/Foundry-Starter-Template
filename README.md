@@ -4,12 +4,25 @@ A quick starter template with some additional setup I normally need.
 
 ## Features
 
+### Foundry Configuration
+
+- RPC Endpoints for Mainnet, Polygon, Arbitrum; and their respective testnets.  
+- Etherscan API Keys for Mainnet, Polygon, Arbitrum; and their respective testnets.
+
+### Makefile
+
+File with different `make` shortcuts for commonly used commands in Foundry.
+
 ### Dependencies
 - [Openzeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
 - [Solmate](https://github.com/transmissions11/solmate)
 - [Foundry-DevOps](https://github.com/ChainAccelOrg/foundry-devops)
 
-### 
+#### `remappings.txt`
+- `@openzeppelin`
+- `@solmate`
+- `@foundry-devops`
+
 
 ## Requirements
 
@@ -20,9 +33,12 @@ A quick starter template with some additional setup I normally need.
 
 - Clone this template
     ```bash
-    git clone 
+    git clone https://github.com/C-Mierez/Foundry-Starter-Template.git
     ```
-- Install dependencies using `make`
+- Create a `.env` file according to `.env.example`
+
+### With `make`
+- Run `make` 😄
     ```bash
     make
     ```
@@ -30,7 +46,15 @@ A quick starter template with some additional setup I normally need.
     ```bash
     make test
     ```
-  
+### Without `make`
+- Install submodule dependencies
+  ```bash
+  forge install
+  ```
+- Run tests
+  ```bash
+  forge test
+  ```
 ## Tests
 
 ## Scripts

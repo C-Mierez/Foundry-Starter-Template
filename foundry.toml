@@ -3,4 +3,26 @@ src = 'src'
 out = 'out'
 libs = ['lib']
 
+[etherscan]
+mainnet = { key = "${ETHERSCAN_API_KEY}" }
+polygon = { key = "${POLYGONSCAN_API_KEY}" }
+arbitrum = { key = "${ARBISCAN_API_KEY}" }
+
+# Testnets
+goerli = { key = "${ETHERSCAN_API_KEY}" }
+sepolia = {key = "${ETHERSCAN_API_KEY}"}
+mumbai = {key = "${POLYGONSCAN_API_KEY}"}
+arbitrumGoerli = { key = "${ARBISCAN_API_KEY}" }
+
+[rpc_endpoints]
+mainnet = "${MAINNET_RPC_URL}"
+polygon = "${POLYGON_RPC_URL}"
+arbitrum = "${ARBITRUM_RPC_URL}"
+
+# Testnets
+goerli = "${GOERLI_RPC_URL}"
+sepolia = "${SEPOLIA_RPC_URL}"
+mumbai = "${MUMBAI_RPC_URL}"
+arbitrumGoerli = "${ARBITRUM_GOERLI_RPC_URL}"
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
