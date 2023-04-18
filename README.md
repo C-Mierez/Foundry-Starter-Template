@@ -9,6 +9,11 @@ A quick starter template with some additional setup I normally need.
 - RPC Endpoints for Mainnet, Polygon, Arbitrum; and their respective testnets.  
 - Etherscan API Keys for Mainnet, Polygon, Arbitrum; and their respective testnets.
 
+#### Test configuration
+- Default Verbosity set to `-vvv`
+- Block timestamp set to `1681830000` instead of the unrealistic `1` default
+- Increased amount of runs for **Fuzz and Invariant Tests** to 500. 
+
 ### Makefile
 
 File with different `make` shortcuts for commonly used commands in Foundry.
@@ -23,9 +28,12 @@ File with different `make` shortcuts for commonly used commands in Foundry.
 - `@solmate`
 - `@foundry-devops`
 
-### Dependencies
+### Packages
 - Prettier
 
+### Other
+
+Slither Configuration file `slither.config.json`
 
 ## Requirements
 

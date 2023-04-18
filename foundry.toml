@@ -3,6 +3,22 @@ src = 'src'
 out = 'out'
 libs = ['lib']
 
+# Remappings in `remappings.txt` file
+
+# Optimizer
+optimizer = true
+optimizer_runs = 20000
+
+# Testing
+verbosity = 3 # Equivalent to `-vvv`
+block_timestamp = 1681830000 # Better to test transactions with a more realistic value, instead of an unrealistc "1"
+gas_reports = ["*"] # Report gas usage for all contracts
+
+[fuzz]
+runs = 500
+[Invariant]
+runs = 500
+
 [etherscan]
 mainnet = { key = "${ETHERSCAN_API_KEY}" }
 polygon = { key = "${POLYGONSCAN_API_KEY}" }
