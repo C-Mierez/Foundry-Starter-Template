@@ -24,7 +24,7 @@ format	:; prettier --write src/**/*.sol && prettier --write src/*.sol
 
 slither :; slither ./src 
 
-yarn: 	yarn 
+yarn	:; yarn 
 
 # Add shortcuts here
 deploy-mumbai	:; @forge script script/${contract}.s.sol --rpc-url ${MUMBAI_RPC_URL} --private-key ${PRIVATE_KEY} --broadcast --verify --etherscan-api-key ${POLYGONSCAN_API_KEY} -vvvv
