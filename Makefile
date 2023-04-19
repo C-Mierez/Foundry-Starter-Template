@@ -24,7 +24,7 @@ snapshot:; forge snapshot
 
 format	:; prettier --write src/**/*.sol && prettier --write src/*.sol
 
-slither :; slither ./src 
+slither :; slither .
 
 yarn	:; yarn 
 
