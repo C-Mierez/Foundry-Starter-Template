@@ -36,7 +36,7 @@ File with different `make` shortcuts for commonly used commands in Foundry.
 [Slither](https://github.com/crytic/slither) Configuration file `slither.config.json`
 
 ## Requirements
-
+- [yarn](https://yarnpkg.com/) For installing dependencies
 - [make](https://linux.die.net/man/1/make) For running command shortcuts.
 - [Foundry](https://github.com/foundry-rs/foundry) ... 😄
 
