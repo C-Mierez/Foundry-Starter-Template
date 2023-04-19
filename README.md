@@ -83,6 +83,8 @@ File with different `make` shortcuts for commonly used commands in Foundry.
   forge script script/Counter.s.sol --rpc-url ${GOERLI_RPC_URL} --private-key ${PRIVATE_KEY} --broadcast --verify --etherscan-api-key ${ETHERSCAN_API_KEY}  -vvv
   ```
 
+  Shortcuts for scripts can be added to the `Makefile` for convenience.
+
 # Credit
 
 This template is built from my own personal use and other repos I've encountered, but its structure is heavily influenced by [foundry-starter-kit](https://github.com/smartcontractkit/foundry-starter-kit) from SmartContractKit 🔥
