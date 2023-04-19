@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.13;
 
-import "forge-std/Test.sol";
+// Can also use ForgeStd's Test
+// import "forge-std/Test.sol";
+import {PRBTest} from "@prb/test/PRBTest.sol";
 import "../src/Counter.sol";
 
 // Harness Contract for exposing internal functions so they can be tested
@@ -11,7 +13,7 @@ contract CounterHarness is Counter {
     }
 }
 
-contract CounterTest is Test {
+contract CounterTest is PRBTest {
     CounterHarness public counter;
 
     function setUp() public {

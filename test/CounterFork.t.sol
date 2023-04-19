@@ -2,11 +2,13 @@
 
 pragma solidity ^0.8.13;
 
-import "forge-std/Test.sol";
+// Can also use ForgeStd's Test
+// import "forge-std/Test.sol";
+import {PRBTest} from "@prb/test/PRBTest.sol";
 import "../src/Counter.sol";
 
 // See https://book.getfoundry.sh/forge/fork-testing#forking-cheatcodes
-contract CounterForkTest is Test {
+contract CounterForkTest is PRBTest {
     uint256 fork;
     uint256 forkBlock = 12000000; // Use a set block to cache RPC responses and have deterministic execution
 
