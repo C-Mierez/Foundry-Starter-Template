@@ -1,5 +1,7 @@
 -include .env
 
+.PHONY: all clean remove install update build test snapshot format slither deploy-mumbai
+
 all: yarn clean remove install update build 
 
 # Clean forge artifacts and cache
