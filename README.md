@@ -4,15 +4,17 @@ A quick starter template with some additional setup I normally need.
 
 ## Features
 
-### Foundry Configuration
+### Foundry Configuration `foundry.toml`
+
+EVM Variable Keys for:
 
 - RPC Endpoints for Mainnet, Polygon, Arbitrum; and their respective testnets.  
 - Etherscan API Keys for Mainnet, Polygon, Arbitrum; and their respective testnets.
 
 #### Test configuration
 - Default Verbosity set to `-vvv`
-- Block timestamp set to `1681830000` instead of the unrealistic `1` default
-- Increased amount of runs for **Fuzz and Invariant Tests** to 500. 
+- Block timestamp set to `1681830000` instead of the unrealistic `1` default.
+- Increased amount of runs for **Fuzz and Invariant Tests** to `500`. 
 
 ### Makefile
 
@@ -36,7 +38,7 @@ File with different `make` shortcuts for commonly used commands in Foundry.
 [Slither](https://github.com/crytic/slither) Configuration file `slither.config.json`
 
 ## Requirements
-- [yarn](https://yarnpkg.com/) For installing dependencies
+- [yarn](https://yarnpkg.com/) For installing dependencies.
 - [make](https://linux.die.net/man/1/make) For running command shortcuts.
 - [Foundry](https://github.com/foundry-rs/foundry) ... 😄
 
@@ -83,7 +85,7 @@ File with different `make` shortcuts for commonly used commands in Foundry.
   forge script script/Counter.s.sol --rpc-url ${GOERLI_RPC_URL} --private-key ${PRIVATE_KEY} --broadcast --verify --etherscan-api-key ${ETHERSCAN_API_KEY}  -vvv
   ```
 
-  Shortcuts for scripts can be added to the `Makefile` for convenience.
+  > 👀 Shortcuts for scripts can be added to the `Makefile` for convenience.
 
 # Credit
 
