@@ -9,7 +9,7 @@ clean	:; forge clean
 remove	:; rm -rf .gitmodules && rm -rf .git/modules/* && rm -rf lib && touch .gitmodules && git add . && git commit -m "modules"
 
 # Install the modules
-install	:; forge install
+install	:; forge install transmissions11/solmate && forge install ChainAccelOrg/foundry-devops && forge install OpenZeppelin/openzeppelin-contracts
 	
 # Update all dependencies
 update	:; forge update
