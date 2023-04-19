@@ -1,6 +1,6 @@
 -include .env
 
-all: clean remove install update build 
+all: yarn clean remove install update build 
 
 # Clean forge artifacts and cache
 clean	:; forge clean
