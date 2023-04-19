@@ -11,7 +11,7 @@ optimizer_runs = 20000
 
 # Testing
 verbosity = 3 # Equivalent to `-vvv`
-block_timestamp = 1681830000 # Better to test transactions with a more realistic value, instead of an unrealistc "1"
+block_timestamp = 1680318000 # April 1st, 2023 - Better to test transactions with a more realistic value, instead of an unrealistc "1"
 gas_reports = ["*"] # Report gas usage for all contracts
 
 [fuzz]
