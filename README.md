@@ -62,13 +62,26 @@ File with different `make` shortcuts for commonly used commands in Foundry.
   ```bash
   forge install
   ```
+- Install packages
+  ```bash
+  yarn
+  ```
+
 - Run tests
   ```bash
   forge test
   ```
-## Tests
 
 ## Scripts
+
+  Run scripts locally with
+  ```bash
+  forge script script/Counter.s.sol 
+  ```
+  Or in a network with
+  ```
+  forge script script/Counter.s.sol --rpc-url ${GOERLI_RPC_URL} --private-key ${PRIVATE_KEY} --broadcast --verify --etherscan-api-key ${ETHERSCAN_API_KEY}  -vvv
+  ```
 
 # Credit
 
