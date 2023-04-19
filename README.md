@@ -13,7 +13,7 @@ EVM Variable Keys for:
 
 #### Test configuration
 - Default Verbosity set to `-vvv`
-- Block timestamp set to `1681830000` instead of the unrealistic `1` default.
+- Block timestamp set to `1680318000` (April 1st, 2023) instead of the unrealistic `1` default value.
 - Increased amount of runs for **Fuzz and Invariant Tests** to `500`. 
 
 ### Makefile
@@ -24,6 +24,7 @@ File with different `make` shortcuts for commonly used commands in Foundry.
 - [Openzeppelin Contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
 - [Solmate](https://github.com/transmissions11/solmate)
 - [Foundry-DevOps](https://github.com/ChainAccelOrg/foundry-devops)
+- [PRB-Test](https://github.com/PaulRBerg/prb-test)
 
 #### `remappings.txt`
 - `@openzeppelin`
