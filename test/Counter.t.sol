@@ -3,22 +3,12 @@ pragma solidity ^0.8.13;
 
 // Can also use ForgeStd's Test
 // import "forge-std/Test.sol";
-import {PRBTest} from "@prb/test/PRBTest.sol";
-import "../src/Counter.sol";
+// import {PRBTest} from "@prb/test/PRBTest.sol";
+import {TestContext} from "./shared/TestContext.t.sol";
 
-// Harness Contract for exposing internal functions so they can be tested
-contract CounterHarness is Counter {
-    function exposed_internalDecrement() external {
-        internalDecrement();
-    }
-}
-
-contract CounterTest is PRBTest {
-    CounterHarness public counter;
-
+contract CounterTest is TestContext {
     function setUp() public {
-        counter = new CounterHarness();
-        counter.setNumber(0);
+        setUpContextV1();
     }
 
     function test_increment_CanIncrementCounter() public {
