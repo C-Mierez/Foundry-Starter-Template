@@ -33,7 +33,7 @@ A starter template built from common needs I've encountered regularly while work
 
 ### Makefile
 
-File with different `make` shortcuts for commonly used commands in Foundry.
+File with different `make` shortcuts for commonly used and custom commands in Foundry.
 
 ## Requirements
 - [yarn](https://yarnpkg.com/) For installing dependencies.
@@ -46,12 +46,17 @@ File with different `make` shortcuts for commonly used commands in Foundry.
     ```bash
     forge init --template C-Mierez/Foundry-Starter-Template
     ```
-- Create a `.env` file and populate as per `.env.example`
+    or
+    ```bash
+    forge init my-project --template C-Mierez/Foundry-Starter-Template
+    ```
 
 - Install packages (Prettier, Solhint, ...)
   ```bash
   yarn
   ```
+
+- Create a `.env` file and populate as per `.env.example`
 
 - Run tests
   ```bash
