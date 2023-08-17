@@ -44,25 +44,11 @@ File with different `make` shortcuts for commonly used commands in Foundry.
 
 - Clone this template
     ```bash
-    git clone https://github.com/C-Mierez/Foundry-Starter-Template.git
+    forge init --template C-Mierez/Foundry-Starter-Template
     ```
 - Create a `.env` file and populate as per `.env.example`
 
-### With `make`
-- Run `make` 😄
-    ```bash
-    make
-    ```
-- Run tests
-    ```bash
-    make test
-    ```
-### Without `make`
-- Install submodule dependencies
-  ```bash
-  forge install
-  ```
-- Install packages
+- Install packages (Prettier, Solhint, ...)
   ```bash
   yarn
   ```
